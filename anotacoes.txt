@@ -1,0 +1,14 @@
+Site para criar Docker do php
+    phpdocker.io
+    comando para criar os containers do docker
+        docker-compose up -d
+    obs.: Depois de criados devem ser iniciados com
+        docker-compose start
+    e finalizados com
+        docker-compose stop
+
+comando para listar containers do docker
+    docker-compose ps
+    comando para abrir terminal de determinado container
+        docker-compose exec nomeDoService sh
+
