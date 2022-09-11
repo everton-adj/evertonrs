@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return 'foi';
+    return 'docker foi';
 });
 
 Auth::routes();
