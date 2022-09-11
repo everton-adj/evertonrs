@@ -1,14 +1,22 @@
 Site para criar Docker do php
     phpdocker.io
-    comando para criar os containers do docker
+    Comando para criar os containers do docker
         docker-compose up -d
-    obs.: Depois de criados devem ser iniciados com
+    Obs.: Depois de criados devem ser iniciados com
         docker-compose start
     e finalizados com
         docker-compose stop
 
-comando para listar containers do docker
+Comando para listar containers do docker
     docker-compose ps
-    comando para abrir terminal de determinado container
+    Comando para abrir terminal de determinado container
         docker-compose exec nomeDoService sh
 
+Obs.: O nome do DB_HOST do arquivo .env deve ser o mesmo do Service do Docker
+    Exemplo:
+        DB_CONNECTION=mysql
+        DB_HOST=mariadb
+        DB_PORT=3306
+        DB_DATABASE=laravel
+        DB_USERNAME=root
+        DB_PASSWORD=root
