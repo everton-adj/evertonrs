@@ -19,4 +19,8 @@ Route::get('/', function () {
     return view('home.index');
 });
 
+Route::get('/js', function () {
+    return view('home.js.index');
+});
+
 
