@@ -20,3 +20,10 @@ Obs.: O nome do DB_HOST do arquivo .env deve ser o mesmo do Service do Docker
         DB_DATABASE=laravel
         DB_USERNAME=root
         DB_PASSWORD=root
+    E tambem devemos remover a senha de root para o acesso do laravel no terminal do mariadb
+        docker-compose exec mariadb sh
+        no terminal do mariadb
+            mysql -u root -p
+            senha:root
+            ALTER USER 'root'@'localhost' IDENTIFIED BY '';
+    Depois entrar no terminal do php-fpm e redar o php artisan migrate
