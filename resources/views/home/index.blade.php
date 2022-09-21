@@ -12,3 +12,8 @@
     </div>
 </div>
 @endsection
+@section('scriptEnd')
+<script>
+    $('#homenav').addClass('active');
+</script>
+@endsection

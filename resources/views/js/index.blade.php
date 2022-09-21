@@ -8,3 +8,8 @@
     </div>
 </div>
 @endsection
+@section('scriptEnd')
+<script>
+    $('#jsnav').addClass('active');
+</script>
+@endsection

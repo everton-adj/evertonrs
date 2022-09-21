@@ -15,12 +15,20 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('home.index');
 });
 
 Route::get('/js', function () {
-    return view('home.js.index');
+    return view('js.index');
+});
+
+Route::get('/sobre', function () {
+    return view('sobre.index');
+});
+
+Route::get('/', function () {
+    return view('sobre.index');
 });
 
 
