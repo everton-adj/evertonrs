@@ -27,3 +27,8 @@ Obs.: O nome do DB_HOST do arquivo .env deve ser o mesmo do Service do Docker
             senha:root
             ALTER USER 'root'@'localhost' IDENTIFIED BY '';
     Depois entrar no terminal do php-fpm e redar o php artisan migrate
+
+Após clonar o git lembrar de executar os comandos
+    composer update
+    npm update
+    npm run build
